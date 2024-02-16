@@ -509,10 +509,6 @@ Check out [the accessories pages on microbit.org](https://microbit.org/buy/acces
 
 ```codecard
 [{
-  "name": "Roversa",
-  "url":"/pkg/eb8ga/pxt-roversa-2",
-  "cardType": "package"
-}, {
   "name": "4tronix M.A.R.S. Rover",
   "url":"/pkg/4tronix/mars-rover",
   "cardType": "package"
@@ -936,14 +932,6 @@ Check out [the accessories pages on microbit.org](https://microbit.org/buy/acces
 ## Utilities
 ```codecard
 [{
-  "name": "Faces",
-  "url": "/pkg/GrandpaBond/pxt-faces",
-  "cardType": "package"
-}, {
-  "name": "Makey Makey Code-a-Key",
-  "url": "/pkg/joylabz/code-a-key-extension",
-  "cardType": "package"
-}, {
   "name": "FlexFX",
   "url": "/pkg/GrandpaBond/pxt-flexfx",
   "cardType": "package"

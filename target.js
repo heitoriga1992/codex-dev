@@ -394,6 +394,7 @@ var pxtTargetBundle = {
         "accentColor": "#5C005C",
         "logoUrl": "https://microbit.org/",
         "logo": "docs/static/logo/codex-branco.png",
+        "logoInvoke": "docs/static/logo/invoke.png",
         "docsLogo": "docs/static/logo.square.white.svg",
         "portraitLogo": "docs/static/logo.square.white.svg",
         "footerLogo": "docs/static/logo.portrait.black.svg",
@@ -410,7 +411,6 @@ var pxtTargetBundle = {
             "description": "New? Start here!",
             "cardType": "tutorial"
         },
-        "homeScreenHeroGallery": "/hero-banner",
         "homeUrl": "/",
         "embedUrl": "https://makecode.microbit.org/",
         "shareUrl": "https://makecode.microbit.org/",

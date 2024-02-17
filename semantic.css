@@ -20985,6 +20985,7 @@ select.ui.dropdown {
   color: #fff !important;
   padding-left: 0 !important;
 }
+
 .ui.fullscreen.modal .ui.button.back-button:focus,
 .ui.fullscreen.modal .ui.button.back-button:hover,
 .ui.fullscreen.modal .ui.help-button:focus,
@@ -41531,4 +41532,16 @@ span.blocklyTreeLabel {
 
 .ui.menu .item.sign-in-dropdown{
     display: none;
+}
+
+img.ui.logo.invoke {
+    height: 2rem;
+}
+
+.ui.help-button {
+display: none; 
+}
+
+.ui.cards.centered a{
+display: none;
 }

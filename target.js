@@ -575,7 +575,7 @@ var pxtTargetBundle = {
                 "DAPLink CMSIS-DAP"
             ],
             "minimumFirmwareVersion": "0249",
-            "deviceIcon": "xicon microbit",
+            "deviceIcon": "xicon microsoft",
             "deviceSuccessIcon": "xicon microbit-check",
             "downloadMenuHelpURL": "/device/usb",
             "downloadHelpURL": "/device/usb",

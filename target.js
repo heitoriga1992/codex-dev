@@ -10,23 +10,23 @@ var pxtTargetBundle = {
         "libs/radio",
         "libs/devices",
         "libs/bluetooth",
-        "libs/servo",
         "libs/radio-broadcast",
         "libs/microphone",
         "libs/settings",
         "libs/flashlog",
         "libs/datalogger",
         "libs/color",
-        "libs/audio-recording"
+        "libs/audio-recording",
+        "libs/sonar"
     ],
     "cloud": {
-        "workspace": false,
+        "workspace": true,
         "packages": true,
         "sharing": true,
         "thumbnails": true,
         "publishing": true,
         "importing": true,
-        "showBadges": false,
+        "showBadges": true,
         "preferredPackages": [
             "Microsoft/pxt-neopixel"
         ],

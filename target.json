@@ -10,7 +10,6 @@
         "libs/radio",
         "libs/devices",
         "libs/bluetooth",
-        "libs/servo",
         "libs/radio-broadcast",
         "libs/microphone",
         "libs/settings",
@@ -28,7 +27,7 @@
         "importing": true,
         "showBadges": false,
         "preferredPackages": [
-            "Microsoft/pxt-neopixel"
+            "Microsoft/pxt-neopissssssssssssxel"
         ],
         "githubPackages": true,
         "cloudProviders": {

@@ -3053,8 +3053,8 @@ path.sim-board {
             "P20, I2C - SDA",
             "GND", "GND", "+3v3", "GND"
         ];
-        const MB_WIDTH = 500;
-        const MB_HEIGHT = 408;
+        const MB_WIDTH = 200;
+        const MB_HEIGHT = 498;
         visuals.themes = ["#3ADCFE", "#FFD43A", "#3AFFB3", "#FF3A54"].map(accent => {
             return {
                 accent: accent,
@@ -3714,7 +3714,7 @@ path.sim-board {
                 for (let i = 0; i < 3; ++i)
                     pxsim.svg.child(merge, "feMergeNode", { in: "glow" });
                 // outline
-                this.pkg = pxsim.svg.path(this.g, "sim-board", "M498,31.9C498,14.3,483.7,0,466.1,0H31.9C14.3,0,0,14.3,0,31.9v342.2C0,391.7,14.3,406,31.9,406h434.2c17.6,0,31.9-14.3,31.9-31.9V31.9z M14.3,206.7c-2.7,0-4.8-2.2-4.8-4.8c0-2.7,2.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C19.2,204.6,17,206.7,14.3,206.7z M486.2,206.7c-2.7,0-4.8-2.2-4.8-4.8c0-2.72.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C491,204.6,488.8,206.7,486.2,206.7z");
+                this.pkg = pxsim.svg.path(this.g, "sim-board", "M315,31.9C315,14.3,300.7,0,283.1,0H31.9C14.3,0,0,14.3,0,31.9v459.1C0,508.7,14.3,523,31.9,523h283.2c17.6,0,31.9-14.3,31.9-31.9V31.9z M14.3,245.5c-2.7,0-4.8-2.2-4.8-4.8c0-2.7,2.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C19.2,243.4,17,245.5,14.3,245.5z M303.1,245.5c-2.7,0-4.8-2.2-4.8-4.8c0-2.72.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C308,243.4,305.8,245.5,303.1,245.5z");
                 pxsim.svg.hydrate(this.pkg, { fill: "#111" });
                 // script background
                 this.display = pxsim.svg.path(this.g, "sim-display", "M333.8,310.3H165.9c-8.3,0-15-6.7-15-15V127.5c0-8.3,6.7-15,15-15h167.8c8.3,0,15,6.7,15,15v167.8C348.8,303.6,342.1,310.3,333.8,310.3z");
@@ -3760,7 +3760,7 @@ path.sim-board {
                     "M249,317.3c-12.8,0-22.1,10.3-23.1,23.1V406h46.2v-65.6C272.1,327.7,261.8,317.3,249,317.3z M249.4,360.1c-10.7,0-19.3-8.6-19.3-19.3c0-10.7,8.6-19.3,19.3-19.3c10.7,0,19.3,8.7,19.3,19.3C268.7,351.5,260.1,360.1,249.4,360.1z"
                 ].map((p, pi) => pxsim.svg.path(this.g, "sim-pin sim-pin-touch", p));
                 // P3
-                this.pins.push(pxsim.svg.path(this.g, "sim-pin", "M0,357.7v19.2c0,10.8,6.2,20.2,14.4,25.2v-44.4H0z"));
+                this.pins.push(pxsim.svg.path(this.g, "sim-pin", "M0,470.7v19.2c0,10.8,6.2,20.2,14.4,25.2v-44.4H0z"));
                 pins4onXs.forEach(x => {
                     this.pins.push(pxsim.svg.child(this.g, "rect", { x: x, y: 356.7, width: 10, height: 50, class: "sim-pin" }));
                 });
@@ -3778,9 +3778,9 @@ path.sim-board {
                 this.buttonsOuter = [];
                 this.buttons = [];
                 const outerBtn = (left, top, label) => {
-                    const btnr = 4;
-                    const btnw = 56.2;
-                    const btnn = 6;
+                    const btnr = 7;
+                    const btnw = 40.2;
+                    const btnn = 5;
                     const btnnm = 10;
                     let btng = pxsim.svg.child(this.g, "g", { class: "sim-button-group" });
                     pxsim.accessibility.makeFocusable(btng);
@@ -3794,9 +3794,9 @@ path.sim-board {
                 };
                 outerBtn(25.9, 176.4, "A");
                 this.buttons.push(pxsim.svg.path(this.g, "sim-button", "M69.7,203.5c0,8.7-7,15.7-15.7,15.7s-15.7-7-15.7-15.7c0-8.7,7-15.7,15.7-15.7S69.7,194.9,69.7,203.5"));
-                outerBtn(418.1, 176.4, "B");
+                outerBtn(200.1, 176.4, "B");
                 this.buttons.push(pxsim.svg.path(this.g, "sim-button", "M461.9,203.5c0,8.7-7,15.7-15.7,15.7c-8.7,0-15.7-7-15.7-15.7c0-8.7,7-15.7,15.7-15.7C454.9,187.8,461.9,194.9,461.9,203.5"));
-                outerBtn(417, 250, "A+B");
+                outerBtn(200, 250, "A+B");
                 this.buttons.push(pxsim.svg.child(this.g, "circle", { class: "sim-button", cx: 446, cy: 278, r: 16.5 }));
                 this.buttonsOuter[2].style.visibility = "hidden";
                 this.buttons[2].style.visibility = "hidden";
@@ -3839,7 +3839,7 @@ path.sim-board {
                 this.v2Text.style.fontWeight = "700";
                 // update pins
                 // notch: 46.2 -> h 7 c 0 0 -1 -9 8 -8 l 18 0 c 0 0 9 -1 8 8 h 7
-                this.pins[0].setAttribute("d", "M 16.5 341.2 c 0 0.4 -0.1 0.9 -0.1 1.3 v 60.7 c 2.6 1.8 4.6 2.8 8.6 2.8 c 0 0 -1 -9 8 -8 l 16 0 c 0 0 9 -1 8 8 h 8 v -64.7 c 0 0 0 -0.1 0 -0.1 c 0 -13 -10.6 -23.6 -23.7 -23.6 C 27.2 317.6 16.5 328.1 16.5 341.2 z M 21.2 341.6 c 0 -10.7 8.7 -19.3 19.3 -19.3 c 10.7 0 19.3 8.7 19.3 19.3 c 0 10.7 -8.6 19.3 -19.3 19.3 C 29.9 360.9 21.2 352.2 21.2 341.6 z");
+                this.pins[0].setAttribute("d", "M 16.5 441.2 c 0 0.4 -0.1 0.9 -0.1 1.3 v 60.7 c 2.6 1.8 4.6 2.8 8.6 2.8 c 0 0 -1 -9 8 -8 l 16 0 c 0 0 9 -1 8 8 h 8 v -64.7 c 0 0 0 -0.1 0 -0.1 c 0 -13 -10.6 -23.6 -23.7 -23.6 C 27.2 317.6 16.5 328.1 16.5 441.2 z M 21.2 441.6 c 0 -10.7 8.7 -19.3 19.3 -19.3 c 10.7 0 19.3 8.7 19.3 19.3 c 0 10.7 -8.6 19.3 -19.3 19.3 C 29.9 360.9 21.2 352.2 21.2 441.6 z");
                 this.pins[1].setAttribute("d", "M139.1,317.3c-12.8,0-22.1,10.3-23.1,23.1V406h 6 c 0 0 -1 -9 8 -8 l 17 0 c 0 0 9 -1 8 8 h 7v-65.6C162.2,327.7,151.9,317.3,139.1,317.3zM139.3,360.1c-10.7,0-19.3-8.6-19.3-19.3c0-10.7,8.6-19.3,19.3-19.3c10.7,0,19.3,8.7,19.3,19.3C158.6,351.5,150,360.1,139.3,360.1z");
                 this.pins[2].setAttribute("d", "M249,317.3c-12.8,0-22.1,10.3-23.1,23.1V406h 6 c 0 0 -1 -9 8 -8 l 17 0 c 0 0 9 -1 8 8 h 7v-65.6C272.1,327.7,261.8,317.3,249,317.3z M249.4,360.1c-10.7,0-19.3-8.6-19.3-19.3c0-10.7,8.6-19.3,19.3-19.3c10.7,0,19.3,8.7,19.3,19.3C268.7,351.5,260.1,360.1,249.4,360.1z");
                 // 3v
@@ -4542,6 +4542,7 @@ var pxsim;
     }
     pxsim.AnalogSensorState = AnalogSensorState;
 })(pxsim || (pxsim = {}));
+/// <reference path="../../core/sim/analogSensor.ts" />
 var pxsim;
 (function (pxsim) {
     class MicrophoneState extends pxsim.AnalogSensorState {

@@ -3868,11 +3868,13 @@ path.sim-board {
           pxsim.svg.child(btng, "circle", { class: "sim-button-nut", cx: left + btnw - btnnm, cy: top + btnw - btnnm, r: btnn });
           pxsim.svg.child(btng, "circle", { class: "sim-button-nut", cx: left + btnw - btnnm, cy: top + btnnm, r: btnn });
         };
-        outerBtn(25.9, 176.4, "A");
+        outerBtn(75.9, 416.4, "A");
         this.buttons.push(
           pxsim.svg.path(this.g, "sim-button", "M69.7,203.5c0,8.7-7,15.7-15.7,15.7s-15.7-7-15.7-15.7c0-8.7,7-15.7,15.7-15.7S69.7,194.9,69.7,203.5")
         );
-        outerBtn(418.1, 176.4, "B");
+        console.log(this.buttons);
+        this.buttons[0].style.transform = "translate(50px, 240.75px)";
+        outerBtn(375.1, 416.4, "B");
         this.buttons.push(
           pxsim.svg.path(
             this.g,
@@ -3880,6 +3882,8 @@ path.sim-board {
             "M461.9,203.5c0,8.7-7,15.7-15.7,15.7c-8.7,0-15.7-7-15.7-15.7c0-8.7,7-15.7,15.7-15.7C454.9,187.8,461.9,194.9,461.9,203.5"
           )
         );
+        this.buttons[1].style.transform = "translate(-42px, 240.75px)";
+
         outerBtn(417, 250, "A+B");
         this.buttons.push(pxsim.svg.child(this.g, "circle", { class: "sim-button", cx: 446, cy: 278, r: 16.5 }));
         this.buttonsOuter[2].style.visibility = "hidden";

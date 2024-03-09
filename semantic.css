@@ -41564,3 +41564,9 @@ body {
 .sim-pin-glasses{
   transform: translate(570px, 10px);
 }
+
+@media screen (min-width:100px) {
+  body{
+    padding:0px 371px
+  }
+}

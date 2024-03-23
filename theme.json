@@ -1,7 +1,7 @@
 {
     "accentColor": "#5C005C",
     "logoUrl": "https://microbit.org/",
-    "logo": "docs/static/logo/codex-branco.png",
+    "logo": "docs/static/logo.portrait.white.svg",
     "docsLogo": "docs/static/logo.square.white.svg",
     "portraitLogo": "docs/static/logo.square.white.svg",
     "footerLogo": "docs/static/logo.portrait.black.svg",
@@ -12,7 +12,7 @@
     "organizationLogo": "docs/static/Microsoft_logo_rgb_W-white_D-square.png",
     "organizationWideLogo": "docs/static/Microsoft_logo_rgb_W-white_D.png",
     "homeScreenHero": {
-        "imageUrl": "docs/static/herogallery/hero-banner.jpeg",
+        "imageUrl": "docs/static/herogallery/hero-banner.png",
         "name": "Flashing Heart",
         "url": "/projects/flashing-heart",
         "description": "New? Start here!",
@@ -145,7 +145,8 @@
         "editor.background": "#ecf0f1"
     },
     "monacoFieldEditors": [
-        "soundeffect-editor"
+        "soundeffect-editor",
+        "image-editor"
     ],
     "browserDbPrefixes": {
         "1": "v1",
@@ -153,7 +154,8 @@
         "3": "v3",
         "4": "v4",
         "5": "v5",
-        "6": "v6"
+        "6": "v6",
+        "7": "v7"
     },
     "editorVersionPaths": {
         "0": "v0"

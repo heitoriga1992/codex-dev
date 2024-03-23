@@ -393,12 +393,18 @@
             "appTheme": {
                 "hideReplaceMyCode": false
             }
+        },
+        "teachertool=1": {
+            "appTheme": {
+                "hideMenuBar": true,
+                "workspaceSearch": true
+            }
         }
     },
     "uploadDocs": true,
     "versions": {
-        "target": "6.1.8",
-        "pxt": "9.3.7"
+        "target": "7.0.4",
+        "pxt": "10.0.11"
     },
     "blocksprj": {
         "id": "blocksprj",

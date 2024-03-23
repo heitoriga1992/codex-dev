@@ -455,7 +455,10 @@
             "microsoft/microbit-robot": { "tags": [ "Robotics" ] },
             "4tronix/mars-rover": { "tags": [ "Robotics" ] },
             "monkmakes/plant-monitor-makecode": { "tags": [ "Science" ] },
-            "grandpabond/pxt-flexfx": { "tags": [ "Software" ] }
+            "grandpabond/pxt-flexfx": { "tags": [ "Software" ] },
+            "grandpabond/pxt-faces": { "tags": [ "Software" ] },
+            "joylabz/code-a-key-extension": {},
+            "eb8ga/pxt-roversa-2": { "tags": [ "Robotics" ] }
         },
         "upgrades": {
             "tinkertanker/pxt-iot-environment-kit": "min:v4.2.1",
@@ -497,6 +500,60 @@
             "https://microsoft.github.io/jacdac-docs/tools/makecode-editor-extension"
         ],
         "extensionsToolboxDisallowDelete": [
+        ]
+    },
+    "galleries": {
+        "Tutorials": "tutorials",
+        "Tutorials for the new micro:bit (V2)": "tutorials-v2",
+        "Live Coding": {
+            "url": "live-coding",
+            "shuffle": "daily",
+            "youTube": true
+        },
+        "Games": "projects/games",
+        "Radio Games": "projects/radio-games",
+        "Fashion": "projects/fashion",
+        "Music": "projects/music",
+        "Toys": "projects/toys",
+        "Science": "projects/science",
+        "Tools": "projects/tools",
+        "Turtle": "projects/turtle",
+        "Blocks to JavaScript": "courses/blocks-to-javascript",
+        "Courses": "courses",
+        "Jacdac": "jacdac",
+        "MicroCode for the new micro:bit (V2)": "microcode",
+        "Behind the MakeCode Hardware": {
+            "url": "behind-the-makecode-hardware",
+            "youTube": true
+        },
+        "Science Experiments": {
+            "url": "science-experiments",
+            "youTube": true
+        },
+        "Coding for Teachers": {
+            "url": "coding-for-teachers",
+            "youTube": true
+        },
+        "Coding Cards": "coding-cards",
+        "Deep Dive": {
+            "url": "deep-dive",
+            "youTube": true
+        }
+    },
+    "teachertool": {
+        "carousels": [
+            {
+                "title": "Rubrics for Tutorials",
+                "cardsUrl": "teachertool/carousels/rubrics-for-tutorials/cards.json"
+            },
+            {
+                "title": "Rubrics for V2 Tutorials",
+                "cardsUrl": "teachertool/carousels/rubrics-for-tutorials-v2/cards.json"
+            },
+            {
+                "title": "Rubrics for Games",
+                "cardsUrl": "teachertool/carousels/rubrics-for-games/cards.json"
+            }
         ]
     },
     "electronManifest": {

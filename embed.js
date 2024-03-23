@@ -10,7 +10,7 @@
     "gifworkerjs": "/gifjs/gif.worker.js",
     "serviceworkerjs": "/serviceworker.js",
     "typeScriptWorkerJs": "/tsworker.js",
-    "pxtVersion": "9.3.7",
+    "pxtVersion": "10.0.11",
     "pxtRelId": "localDirRelId",
     "pxtCdnUrl": "/",
     "commitCdnUrl": "/",
@@ -28,11 +28,12 @@
     "docsUrl": "/docs.html",
     "multiUrl": "/multi.html",
     "asseteditorUrl": "/asseteditor.html",
-    "skillmapUrl": "/skillmap.html",
-    "authcodeUrl": "/authcode.html",
-    "multiplayerUrl": "/multiplayer.html",
+    "isStatic": true,
     "kioskUrl": "/kiosk.html",
-    "isStatic": true
+    "teachertoolUrl": "/teachertool.html",
+    "skillmapUrl": "/skillmap.html",
+    "multiplayerUrl": "/multiplayer.html",
+    "authcodeUrl": "/authcode.html"
 };
 
     var scripts = [
@@ -58,7 +59,7 @@
     window.ksRunnerWhenLoaded = function() {
         pxt.docs.requireHighlightJs = function() { return hljs; }
         pxt.setupWebConfig(pxtConfig || window.pxtWebConfig)
-        pxt.runner.initCallbacks = pxtCallbacks
+        pxt.runner.setInitCallbacks(pxtCallbacks)
         pxtCallbacks.push(function() {
             pxtCallbacks = null
         })

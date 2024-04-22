@@ -41582,3 +41582,26 @@ body {
     }
   }
 }
+.sobre-6 {
+  width: 100%;
+  position: relative;
+}
+
+.invoke-absolute-about-img{
+  position: absolute;
+    right: 30px;
+    top: 0;
+    width: 190px;
+    height: auto !important;
+}
+.invoke-absolute-about-text{
+  position: absolute;
+    top: 90px;
+    right: 45px;
+    font-size: 18px;
+}
+.invoke-absolute-home-img{
+  position: absolute;
+  right: 65px;
+  top: 50px;
+}

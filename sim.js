@@ -3786,7 +3786,6 @@ path.sim-board {
         this.pins.forEach((p, i) => pxsim.svg.hydrate(p, { title: pinTitles[i] }));
    
         this.pinGradients = this.pins.map((pin, i) => {
-          console.log("🚀  i:", i);
           let gid = "gradient-pin-" + i;
           let lg = pxsim.svg.linearGradient(this.defs, gid);
           pin.setAttribute("fill", `url(#${gid})`);
